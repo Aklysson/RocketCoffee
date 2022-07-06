@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Poppins:wght@400;600&family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope';
+
+
+}
+
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+body {
+    background: url('/assets/blur-1.png') top left / 50% 100% no-repeat,
+    url('/assets/blur-2.png') bottom right / 50% 100% no-repeat,
+    url('/assets/rocket-coffee.png') center 100% / 50% 50% no-repeat;
+    color: var(--text-color);
+    background-color: var(--backgrond);
+    overflow-x: hidden;
+}
+
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
+    background: transparent;
+    color: var(--text-color);
+    border: solid 2px;
+    border-radius: 5px;
+    border-color: var(--button);
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    min-width: 10rem;
+
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    padding: 3rem 1rem;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+nav {
+    display: flex;
+    gap: 3rem;
+    flex-shrink: 1;
+    flex-wrap: nowrap;
+}
+
+svg {
+    padding: 0 4rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    font-weight: 700;
+    gap: -1rem;
+}
+
+#text-1 {
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+    color: #000;
+}
+p {
+    -webkit-margin-before: 0.1rem;
+    -webkit-margin-after: 0.1rem;
+  }
+
+  @media (max-width: 780px) {
+    body{
+        overflow-x: hidden;
+    }
+  }
+
