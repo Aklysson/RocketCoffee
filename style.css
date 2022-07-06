@@ -120,6 +120,11 @@ p {
     
 }
 
+.text1{
+    font-size: 2rem;
+
+}
+
         header{
             padding: 0;
             margin: 0;
@@ -139,12 +144,13 @@ p {
             font-size: 1.5rem;
             font-weight: 700;
             text-align: center;
-            margin: 2rem 0rem;
+            margin: 2rem 4rem;
+            gap: 2rem;
             
         }
 
         #café{
-            margin: 4rem 4rem;
+
             display: block;
         }
 
