@@ -31,8 +31,8 @@ html {
     width: 100%;
     height: 100%;
 }
-
-button {
+ 
+.btn-1{
     cursor: pointer;
     background: transparent;
     color: var(--text-color);
@@ -66,7 +66,7 @@ nav {
     flex-wrap: nowrap;
 }
 
-svg {
+.svg-icon {
     padding: 0 4rem;
 }
 
@@ -89,9 +89,117 @@ p {
     -webkit-margin-after: 0.1rem;
   }
 
-  @media (max-width: 780px) {
+.logo {
+    display: none;
+}
+
+.menu-btn{
+    display: none;
+
+
+}
+
+#café{
+    display: none;
+}
+
+#cafezim{
+    display: none;
+}
+
+
+  @media (max-width: 920px) {
     body{
         overflow-x: hidden;
+        background: url('/assets/rocket-coffee.png') center 100% / 30rem auto no-repeat
+        ,url('/assets/blur-mobile.png') center 100% / 100% 50% no-repeat;
+        background-color: var(--backgrond);
+    
+    padding: 0;
+    margin: 0;
+    
+}
+
+        header{
+            padding: 0;
+            margin: 0;
+            display:flex;
+            justify-content:space-between;
+            gap: 5rem;
+            height: 8vh;
+            
+         
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin: 2rem 0rem;
+            
+        }
+
+        #café{
+            margin: 4rem 4rem;
+            display: block;
+        }
+
+        #cafezim{
+            display: block;
+        }
+
+    header a svg {
+        display: none;
+    }
+
+    .logo :hover {
+        cursor: pointer;
+    }
+
+    header .btn-1{
+        display: none;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: flex-start;
+        
+        
+    }
+
+     .menu-btn {
+        display: flex;
+        justify-self: start;
+     }
+
+     .menu-btn :hover{
+        cursor: pointer;
+     }
+    
+
+
+    header nav {
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        background-color: var(--backgrond);
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    header nav a {
+        width: 100%;
+    }
+
+    header nav .active{
+        left: 0;
     }
   }
 
