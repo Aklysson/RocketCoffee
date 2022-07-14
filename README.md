@@ -1,4 +1,4 @@
 # RocketCoffee
 
- Responsive Navbar using only HTML,Css and JavaScript
+ Responsive Website using only HTML,Css and JavaScript
  
