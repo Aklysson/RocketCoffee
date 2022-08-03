@@ -7,3 +7,9 @@
 <img src='./imgs/img2.png' alt='./img2.png' />
 <img src='./imgs/img3.png' alt='./img3.png' />
 </div>
+<h1>Tecnologias</h1>
+<p>HTML</p>
+<p>Css</p>
+<p>JavaScript</p>
+
+
